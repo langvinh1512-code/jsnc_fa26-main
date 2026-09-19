@@ -18,3 +18,24 @@ console.log("Xin chao ", name);
 }
 sayHello("An");
 
+//bai5
+function sum(a,b){
+    return a + b;
+}
+const result = sum(1,2);
+console.log(result);
+
+//bai6
+function calculateTotal(price,quantity){
+    return price * quantity;
+}
+const total = calculateTotal(10000,3);
+console.log(total);
+
+//bai7
+function calculateAverage(math, english, javascript){
+    return (math + english + javascript)/3;
+}
+const average = calculateAverage(8, 7, 9);
+console.log(average);
+
