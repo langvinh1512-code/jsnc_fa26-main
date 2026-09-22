@@ -73,7 +73,7 @@ console.log(sinhVien);
 console.log(sinhVien.name);
 //In tuổi
 console.log(sinhVien.age);
-//In email.
+//In email. 
 console.log(sinhVien.email);
 //Thay đổi tuổi.
 sinhVien.age = 31;
@@ -98,4 +98,76 @@ for (let i = 0; i < danhSachSV.length; i++) {
 //In tên của tất cả sinh viên.
 for (let i = 0; i < danhSachSV.length; i++) {
   console.log(danhSachSV[i].name);
+}
+
+//baitap5
+const students5 = [
+  {
+    id: 1,
+    name: "Nguyễn Văn An",
+    age: 20,
+  },
+  {
+    id: 2,
+    name: "Trần Văn Bình",
+    age: 21,
+  },
+  {
+    id: 3,
+    name: "Lê Văn Nam",
+    age: 20,
+  },
+];
+
+let danhSach = document.getElementById("students5");
+for(let i = 0; i < students5.length;i++){
+    let sinhVien2 = students5[i];
+   danhSach.innerHTML +=   `<div>
+                    <p>${sinhVien2.name}</p>
+                    <p>Tuổi: ${sinhVien2.age}</p>
+                </div>`;
+}
+
+//baitaptonghop
+const products = [
+  {
+    id: 1,
+    name: "iPhone 15",
+    price: 20000000,
+  },
+  {
+    id: 2,
+    name: "Samsung Galaxy S24",
+    price: 18000000,
+  },
+  {
+    id: 3,
+    name: "Xiaomi 14",
+    price: 12000000,
+  },
+];
+
+//In danh sách sản phẩm ra Console.
+console.log(products);
+//Duyệt Array bằng for+ in ra
+for(let i = 0; i < products.length; i++){
+    let product = products[i];
+    console.log(product.name + "-" + product.price);
+}
+//Tính tổng giá của tất cả sản phẩm.
+let tongGia = 0;
+for(let i = 0; i < products.length; i++){
+     tongGia += products[i].price;
+     console.log("Tong gia: " + tongGia);
+}
+//Hiển thị danh sách sản phẩm lên HTML.
+ 
+let danhSachSP = document.getElementById("products");
+
+for(let i =0; i < products.length; i++){
+    let ds = products[i];
+    danhSachSP.innerHTML += `
+    <div>
+    ${ds.name} - ${ds.name}
+    </div>`;
 }
